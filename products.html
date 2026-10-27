@@ -5,59 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>उत्पादने श्रेणी - स्वराज्य सिस्टीम्स</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans Devanagari', sans-serif; }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+  </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+  <!-- Header & Navigation -->
+  <header class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-orange-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-12">
-        <span class="text-xl font-bold text-blue-900">स्वराज्य सिस्टीम्स</span>
+        <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-14 w-auto drop-shadow">
+        <div>
+          <span class="text-2xl font-black text-blue-900 tracking-tight block leading-tight">स्वराज्य सिस्टीम्स</span>
+          <span class="text-xs font-semibold text-orange-600 tracking-wider">समृद्धीचा नवा मार्ग</span>
+        </div>
       </div>
-      <nav class="space-x-6 hidden md:block font-medium">
-        <a href="index.html" class="hover:text-orange-600">मुख्य पृष्ठ</a>
-        <a href="about.html" class="hover:text-orange-600">आमच्याबद्दल</a>
-        <a href="products.html" class="text-orange-600 font-bold">उत्पादने</a>
-        <a href="business.html" class="hover:text-orange-600">व्यवसाय संधी</a>
-        <a href="register.html" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">नोंदणी करा</a>
+      <nav class="hidden md:flex items-center space-x-8 font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-orange-600 transition">मुख्य पृष्ठ</a>
+        <a href="about.html" class="hover:text-blue-900 transition">आमच्याबद्दल</a>
+        <a href="products.html" class="text-orange-600 font-bold border-b-2 border-orange-500 pb-1">उत्पादने</a>
+        <a href="business.html" class="hover:text-blue-900 transition">व्यवसाय संधी</a>
+        <a href="register.html" class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-5 py-2.5 rounded-full hover:shadow-lg transition">आजच नोंदणी करा</a>
       </nav>
     </div>
   </header>
 
-  <section class="max-w-5xl mx-auto py-12 px-4">
-    <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center">उत्पादन श्रेणी आणि विस्तार</h2>
+  <!-- Page Banner -->
+  <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-12 px-4 text-center">
+    <h1 class="text-3xl md:text-4xl font-extrabold mb-2">उत्पादन श्रेणी व सेवा विस्तार</h1>
+    <p class="text-blue-200 text-sm md:text-base">घरपोच सेवा, दैनिक किराणा आणि होलसेल पुरवठ्याचे विस्तृत जाळे</p>
+  </section>
 
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded-lg shadow flex items-start space-x-4">
-        <div class="text-3xl text-orange-500">🧼</div>
+  <!-- Products & Services Grid Section -->
+  <section class="py-16 px-4 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      
+      <!-- Home Care -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 card-hover flex items-start space-x-6">
+        <div class="w-16 h-16 bg-blue-50 text-blue-900 rounded-2xl flex items-center justify-center text-3xl shrink-0">
+          <i class="fa-solid fa-soap"></i>
+        </div>
         <div>
-          <h3 class="text-xl font-bold text-blue-900">होम केअर</h3>
-          <p class="text-slate-600 mt-1">साबण, डिटर्जंट, निरमा व स्वच्छता उत्पादने.</p>
+          <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">स्वच्छता व देखभाल</span>
+          <h3 class="text-2xl font-bold text-blue-900 mt-1 mb-2">होम केअर</h3>
+          <p class="text-slate-600 leading-relaxed">साबण, डिटर्जंट, निरमा व उच्च दर्जाची स्वच्छता उत्पादने थेट ग्राहकांपर्यंत व दुकानांपर्यंत पोहोचवली जातात[cite: 6].</p>
         </div>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow flex items-start space-x-4">
-        <div class="text-3xl text-orange-500">🛒</div>
+
+      <!-- Daily Grocery -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 card-hover flex items-start space-x-6">
+        <div class="w-16 h-16 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center text-3xl shrink-0">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
         <div>
-          <h3 class="text-xl font-bold text-blue-900">दैनिक किराणा</h3>
-          <p class="text-slate-600 mt-1">दैनंदिन गरजेच्या सर्व प्रमुख वस्तू व पॅकेज्ड फूड.</p>
+          <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">अन्न व धान्य</span>
+          <h3 class="text-2xl font-bold text-blue-900 mt-1 mb-2">दैनिक किराणा</h3>
+          <p class="text-slate-600 leading-relaxed">दैनंदिन गरजेच्या सर्व प्रमुख वस्तू, खाद्यान्न व पॅकेज्ड फूड उत्तम गुणवत्तेसह उपलब्ध[cite: 6].</p>
         </div>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow flex items-start space-x-4">
-        <div class="text-3xl text-orange-500">📦</div>
+
+      <!-- Wholesale Supply -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 card-hover flex items-start space-x-6">
+        <div class="w-16 h-16 bg-blue-50 text-blue-900 rounded-2xl flex items-center justify-center text-3xl shrink-0">
+          <i class="fa-solid fa-boxes-packing"></i>
+        </div>
         <div>
-          <h3 class="text-xl font-bold text-blue-900">होलसेल पुरवठा</h3>
-          <p class="text-slate-600 mt-1">स्थानिक विक्रेते व दुकानांना मोठ्या प्रमाणावर माल पुरवठा.</p>
+          <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">घाऊक व्यापार</span>
+          <h3 class="text-2xl font-bold text-blue-900 mt-1 mb-2">होलसेल पुरवठा</h3>
+          <p class="text-slate-600 leading-relaxed">स्थानिक विक्रेते, व्यापारी व दुकानांना मोठ्या प्रमाणावर होलसेल दरात माल पुरवठा केला जातो[cite: 6].</p>
         </div>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow flex items-start space-x-4">
-        <div class="text-3xl text-orange-500">🚚</div>
+
+      <!-- Home Delivery -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 card-hover flex items-start space-x-6">
+        <div class="w-16 h-16 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center text-3xl shrink-0">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
         <div>
-          <h3 class="text-xl font-bold text-blue-900">होम डिलिव्हरी</h3>
-          <p class="text-slate-600 mt-1">थेट ग्राहकांच्या घरापर्यंत सुरक्षित डिलिव्हरी सेवा.</p>
+          <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">लॉजिस्टिक्स व सेवा</span>
+          <h3 class="text-2xl font-bold text-blue-900 mt-1 mb-2">होम डिलिव्हरी</h3>
+          <p class="text-slate-600 leading-relaxed">डिजिटल प्लॅटफॉर्मच्या सहाय्याने थेट ग्राहकांच्या घरापर्यंत सुरक्षित आणि वेळेवर डिलिव्हरी सेवा[cite: 6].</p>
         </div>
       </div>
+
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-10 px-4 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-10 bg-white p-1 rounded">
+          <span class="text-xl font-bold text-white">Swarajya Systems</span>
+        </div>
+        <p class="text-sm text-slate-400 max-w-md">अधिकृत नोंदणीकृत संस्था (Shop Act & Udyam)[cite: 4].</p>
+      </div>
+      <div class="md:text-right text-sm">
+        <p>© 2026 Swarajya Systems. सर्व अधिकार सुरक्षित.</p>
+        <p class="mt-1 text-slate-500">समृद्धीचा नवा मार्ग - महाराष्ट्र</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
