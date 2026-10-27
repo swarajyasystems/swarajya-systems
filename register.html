@@ -3,47 +3,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>सदस्य नोंदणी - स्वराज्य सिस्टीम्स</title>
+  <title>नवीन सदस्य नोंदणी - स्वराज्य सिस्टीम्स</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans Devanagari', sans-serif; }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+  </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+  <!-- Header & Navigation -->
+  <header class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-orange-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-12">
-        <span class="text-xl font-bold text-blue-900">स्वराज्य सिस्टीम्स</span>
+        <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-14 w-auto drop-shadow">
+        <div>
+          <span class="text-2xl font-black text-blue-900 tracking-tight block leading-tight">स्वराज्य सिस्टीम्स</span>
+          <span class="text-xs font-semibold text-orange-600 tracking-wider">समृद्धीचा नवा मार्ग</span>
+        </div>
       </div>
-      <nav class="space-x-6 hidden md:block font-medium">
-        <a href="index.html" class="hover:text-orange-600">मुख्य पृष्ठ</a>
-        <a href="about.html" class="hover:text-orange-600">आमच्याबद्दल</a>
-        <a href="products.html" class="hover:text-orange-600">उत्पादने</a>
-        <a href="business.html" class="hover:text-orange-600">व्यवसाय संधी</a>
-        <a href="register.html" class="text-orange-600 font-bold">नोंदणी करा</a>
+      <nav class="hidden md:flex items-center space-x-8 font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-orange-600 transition">मुख्य पृष्ठ</a>
+        <a href="about.html" class="hover:text-blue-900 transition">आमच्याबद्दल</a>
+        <a href="products.html" class="hover:text-blue-900 transition">उत्पादने</a>
+        <a href="business.html" class="hover:text-blue-900 transition">व्यवसाय संधी</a>
+        <a href="register.html" class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-5 py-2.5 rounded-full shadow-lg">आजच नोंदणी करा</a>
       </nav>
     </div>
   </header>
 
-  <section class="max-w-xl mx-auto py-12 px-4">
-    <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-100">
-      <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">नवीन सदस्य नोंदणी फॉर्म</h2>
-      <form class="space-y-4">
-        <div>
-          <label class="block text-sm font-medium mb-1">पूर्ण नाव</label>
-          <input type="text" placeholder="तुमचे नाव" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+  <!-- Page Banner -->
+  <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-12 px-4 text-center">
+    <h1 class="text-3xl md:text-4xl font-extrabold mb-2">नवीन सदस्य नोंदणी फॉर्म</h1>
+    <p class="text-blue-200 text-sm md:text-base">स्वराज्य सिस्टीम्सचे अधिकृत पार्टनर व्हा आणि उज्ज्वल भविष्याकडे पाऊल टाका[cite: 10]</p>
+  </section>
+
+  <!-- Main Registration Form Section -->
+  <section class="py-16 px-4 max-w-4xl mx-auto">
+    
+    <!-- Steps Indicator -->
+    <div class="grid grid-cols-4 gap-2 mb-10 text-center text-xs sm:text-sm font-bold">
+      <div class="bg-blue-900 text-white py-2 px-1 rounded-lg">१. मोफत नोंदणी[cite: 9]</div>
+      <div class="bg-slate-200 text-slate-600 py-2 px-1 rounded-lg">२. प्रॉडक्ट निवड[cite: 9]</div>
+      <div class="bg-slate-200 text-slate-600 py-2 px-1 rounded-lg">३. नेटवर्क वाढवा[cite: 9]</div>
+      <div class="bg-slate-200 text-slate-600 py-2 px-1 rounded-lg">४. नियमित उत्पन्न[cite: 9]</div>
+    </div>
+
+    <!-- Registration Card -->
+    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-slate-100">
+      <div class="border-b border-slate-100 pb-6 mb-8">
+        <h2 class="text-2xl font-bold text-blue-900 flex items-center space-x-3">
+          <i class="fa-solid fa-user-pen text-orange-500"></i>
+          <span>आपली माहिती भरा</span>
+        </h2>
+        <p class="text-slate-500 text-sm mt-1">केवायसी (KYC) आणि प्राथमिक माहिती देऊन मोफत नोंदणी पूर्ण करा[cite: 9].</p>
+      </div>
+
+      <form id="regForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Full Name -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-2">संपूर्ण नाव *</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input type="text" required placeholder="तुमचे नाव व आडनाव" class="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition">
+            </div>
+          </div>
+
+          <!-- Mobile Number -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-2">मोबाईल नंबर *</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <input type="tel" pattern="[0-9]{10}" maxlength="10" required placeholder="१० अंकी मोबाईल नंबर" class="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition">
+            </div>
+          </div>
         </div>
-        <div>
-          <label class="block text-sm font-medium mb-1">मोबाईल नंबर</label>
-          <input type="tel" placeholder="१० अंकी मोबाईल नंबर" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Email Address -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-2">ईमेल आयडी (पर्यायी)</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="email" placeholder="example@email.com" class="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition">
+            </div>
+          </div>
+
+          <!-- Business Role Selection -->
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-2">सहभागाचा प्रकार *</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+                <i class="fa-solid fa-store"></i>
+              </span>
+              <select required class="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition appearance-none bg-white">
+                <option value="">निवड करा</option>
+                <option value="retailer">स्थानिक किरकोळ विक्रेता (Retailer)</option>
+                <option value="wholesaler">होलसेल पुरवठादार (Wholesaler)</option>
+                <option value="partner">नवीन बिझनेस पार्टनर (Franchise/Partner)</option>
+                <option value="customer">थेट ग्राहक (Customer)</option>
+              </select>
+            </div>
+          </div>
         </div>
+
+        <!-- Address -->
         <div>
-          <label class="block text-sm font-medium mb-1">पत्ता</label>
-          <textarea placeholder="पूर्ण पत्ता" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" rows="3" required></textarea>
+          <label class="block text-sm font-bold text-slate-700 mb-2">संपूर्ण पत्ता व जिल्हा *</label>
+          <div class="relative">
+            <span class="absolute top-3.5 left-0 flex items-center pl-3.5 text-slate-400">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <textarea required rows="3" placeholder="घर/दुकान क्रमांक, रस्ता, शहर/तालुका आणि जिल्हा" class="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition"></textarea>
+          </div>
         </div>
-        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-lg shadow">फॉर्म सबमिट करा</button>
+
+        <!-- Referral / Mentor Code -->
+        <div>
+          <label class="block text-sm font-bold text-slate-700 mb-2">मार्गदर्शक/रेफरल कोड (पर्यायी)</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+              <i class="fa-solid fa-user-plus"></i>
+            </span>
+            <input type="text" placeholder="मार्गदर्शकाचे नाव किंवा रेफरल कोड" class="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition">
+          </div>
+        </div>
+
+        <!-- Terms Agreement -->
+        <div class="flex items-start space-x-3 pt-2">
+          <input type="checkbox" required id="terms" class="mt-1 w-5 h-5 text-orange-500 rounded focus:ring-orange-400 border-slate-300">
+          <label for="terms" class="text-xs text-slate-600 leading-relaxed">
+            मी स्वराज्य सिस्टीम्सचे नियम व कायदेशीर अटी (Shop Act & Udyam मानकांनुसार) मान्य करतो/करते[cite: 4].
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-black py-4 rounded-xl shadow-lg transition transform hover:scale-[1.01] flex items-center justify-center space-x-2 text-lg">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>नोंदणी पूर्ण करा</span>
+        </button>
+
       </form>
     </div>
   </section>
+
+  <!-- Success Modal Popup -->
+  <div id="successModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-50 px-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-8 text-center shadow-2xl transform transition-all">
+      <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="text-2xl font-black text-blue-900 mb-2">अभिनंदन!</h3>
+      <p class="text-slate-600 mb-6">तुमची स्वराज्य सिस्टीम्स सदस्य नोंदणी यशस्वीपणे पूर्ण झाली आहे[cite: 9, 10]. आमचे प्रतिनिधी लवकरच तुमच्याशी संपर्क साधतील.</p>
+      <button onclick="closeModal()" class="bg-blue-900 hover:bg-blue-950 text-white font-bold py-3 px-8 rounded-xl shadow transition">
+        ठीक आहे
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-10 px-4 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-10 bg-white p-1 rounded">
+          <span class="text-xl font-bold text-white">Swarajya Systems</span>
+        </div>
+        <p class="text-sm text-slate-400 max-w-md">अधिकृत नोंदणीकृत संस्था (Shop Act & Udyam)[cite: 4].</p>
+      </div>
+      <div class="md:text-right text-sm">
+        <p>© 2026 Swarajya Systems. सर्व अधिकार सुरक्षित.</p>
+        <p class="mt-1 text-slate-500">समृद्धीचा नवा मार्ग - महाराष्ट्र</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('successModal').classList.remove('hidden');
+      document.getElementById('successModal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').classList.add('hidden');
+      document.getElementById('successModal').classList.remove('flex');
+      document.getElementById('regForm').reset();
+    }
+  </script>
 
 </body>
 </html>
