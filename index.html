@@ -3,43 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>स्वराज्य सिस्टीम्स - मुख्य पृष्ठ</title>
+  <title>स्वराज्य सिस्टीम्स - समृद्धीचा नवा मार्ग</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans Devanagari', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, #003366 0%, #0056b3 50%, #ff6600 100%); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+  </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-  <!-- Header -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+  <!-- 1. Header & Navigation -->
+  <header class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-orange-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-12">
-        <span class="text-xl font-bold text-blue-900">स्वराज्य सिस्टीम्स</span>
+        <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-14 w-auto drop-shadow">
+        <div>
+          <span class="text-2xl font-black text-blue-900 tracking-tight block leading-tight">स्वराज्य सिस्टीम्स</span>
+          <span class="text-xs font-semibold text-orange-600 tracking-wider">समृद्धीचा नवा मार्ग</span>
+        </div>
       </div>
-      <nav class="space-x-6 hidden md:block font-medium">
-        <a href="index.html" class="text-orange-600 font-bold">मुख्य पृष्ठ</a>
-        <a href="about.html" class="hover:text-orange-600">आमच्याबद्दल</a>
-        <a href="products.html" class="hover:text-orange-600">उत्पादने</a>
-        <a href="business.html" class="hover:text-orange-600">व्यवसाय संधी</a>
-        <a href="register.html" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">नोंदणी करा</a>
+      <nav class="hidden md:flex items-center space-x-8 font-semibold text-slate-700">
+        <a href="index.html" class="text-orange-600 font-bold border-b-2 border-orange-500 pb-1">मुख्य पृष्ठ</a>
+        <a href="about.html" class="hover:text-blue-900 transition">आमच्याबद्दल</a>
+        <a href="products.html" class="hover:text-blue-900 transition">उत्पादने</a>
+        <a href="business.html" class="hover:text-blue-900 transition">व्यवसाय संधी</a>
+        <a href="register.html" class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-5 py-2.5 rounded-full hover:shadow-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:-translate-y-0.5">आजच नोंदणी करा</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-3xl md:text-5xl font-extrabold mb-4">आधुनिक तंत्रज्ञान आणि भक्कम सप्लाय चेनद्वारे घरपोच सेवा!</h1>
-      <p class="text-lg md:text-xl mb-8 text-blue-100">महाराष्ट्रात किराणा व माल पुरवठ्याची नवी क्रांती. दर्जेदार किराणा, होलसेल दर आणि डिजिटल नेटवर्कचा फायदा घ्या.</p>
-      <div class="space-x-4">
-        <a href="register.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg">आजच नोंदणी करा</a>
-        <a href="business.html" class="bg-white text-blue-900 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100">व्यवसाय संधी पहा</a>
+  <!-- 2. Premium Hero Section -->
+  <section class="hero-gradient text-white py-20 px-4 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <span class="inline-block bg-orange-500/30 text-orange-200 border border-orange-400/40 px-4 py-1.5 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+        ✨ महाराष्ट्रातील किराणा व माल पुरवठ्याची नवी क्रांती
+      </span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md">
+        आधुनिक तंत्रज्ञान आणि भक्कम सप्लाय चेनद्वारे <span class="text-orange-400">घरपोच सेवा!</span>
+      </h1>
+      <p class="text-lg md:text-2xl mb-10 text-blue-100 max-w-3xl mx-auto font-light">
+        स्वराज्य सिस्टीम्ससोबत जोडा आपला व्यवसाय. दर्जेदार किराणा, होलसेल दरातील वस्तू आणि डिजिटली सक्षम नेटवर्कचा फायदा घ्या.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+        <a href="register.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl transition transform hover:scale-105 flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>आजच मोफत नोंदणी करा</span>
+        </a>
+        <a href="business.html" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold py-4 px-8 rounded-xl backdrop-blur-md transition flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>व्यवसाय संधी पहा</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-300 py-6 text-center text-sm">
-    <p>© 2026 Swarajya Systems. सर्व अधिकार सुरक्षित.</p>
+  <!-- 3. Key Impact Stats -->
+  <section class="max-w-6xl mx-auto -mt-10 px-4 relative z-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
+      <div class="text-center p-3 border-r border-slate-100 last:border-0">
+        <div class="text-3xl font-extrabold text-blue-900">१००%</div>
+        <div class="text-xs sm:text-sm text-slate-500 font-medium">पारदर्शक व्यवहार</div>
+      </div>
+      <div class="text-center p-3 border-r border-slate-100 last:border-0">
+        <div class="text-3xl font-extrabold text-orange-500">महाराष्ट्रात</div>
+        <div class="text-xs sm:text-sm text-slate-500 font-medium">नेटवर्क विस्तार</div>
+      </div>
+      <div class="text-center p-3 border-r border-slate-100 last:border-0">
+        <div class="text-3xl font-extrabold text-blue-900">होलसेल</div>
+        <div class="text-xs sm:text-sm text-slate-500 font-medium">थेट मार्जिन फायदा</div>
+      </div>
+      <div class="text-center p-3">
+        <div class="text-3xl font-extrabold text-orange-500">२४/७</div>
+        <div class="text-xs sm:text-sm text-slate-500 font-medium">डिजिटल सपोर्ट</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Vision & Mission Section -->
+  <section class="py-16 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-orange-500 font-bold text-sm uppercase tracking-wider">व्यावसायिक ओळख</span>
+      <h2 class="text-3xl md:text-4xl font-black text-blue-900 mt-1">दृष्टिकोन व ध्येय</h2>
+      <div class="w-20 h-1 bg-orange-500 mx-auto mt-3 rounded-full"></div>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-900 card-hover">
+        <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-6">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-900 mb-3">मुख्य उद्दिष्ट</h3>
+        <p class="text-slate-600 leading-relaxed">संपूर्ण महाराष्ट्रात तंत्रज्ञान-आधारित नेटवर्क उभारून दर्जेदार किराणा व वस्तूंचा अखंडित पुरवठा करणे.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-orange-500 card-hover">
+        <div class="w-14 h-14 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-900 mb-3">प्रणाली व तंत्रज्ञान</h3>
+        <p class="text-slate-600 leading-relaxed">डिजिटल अॅप व सॉफ्टवेअरच्या सहाय्याने घाऊक आणि किरकोळ विक्रीची जलद होम डिलिव्हरी सिस्टीम.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-blue-900 card-hover">
+        <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-6">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-900 mb-3">विश्वासार्हता</h3>
+        <p class="text-slate-600 leading-relaxed">पारदर्शक व्यवहार आणि तत्पर सेवेद्वारे ग्राहक व व्यापाऱ्यांमध्ये भक्कम विश्वासाची निर्मिती.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Product Expansion Categories -->
+  <section class="bg-slate-100 py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-orange-500 font-bold text-sm uppercase tracking-wider">श्रेणी आणि विस्तार</span>
+        <h2 class="text-3xl md:text-4xl font-black text-blue-900 mt-1">उत्पादन व सेवा श्रेणी</h2>
+        <div class="w-20 h-1 bg-orange-500 mx-auto mt-3 rounded-full"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm card-hover text-center">
+          <div class="w-16 h-16 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+            <i class="fa-solid fa-soap"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-900 mb-2">होम केअर</h3>
+          <p class="text-sm text-slate-600">साबण, डिटर्जंट, निरमा व स्वच्छता उत्पादने.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm card-hover text-center">
+          <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-900 mb-2">दैनिक किराणा</h3>
+          <p class="text-sm text-slate-600">दैनंदिन गरजेच्या सर्व प्रमुख वस्तू व पॅकेज्ड फूड.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm card-hover text-center">
+          <div class="w-16 h-16 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+            <i class="fa-solid fa-boxes-packing"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-900 mb-2">होलसेल पुरवठा</h3>
+          <p class="text-sm text-slate-600">स्थानिक विक्रेते व दुकानांना मोठ्या प्रमाणावर माल पुरवठा.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm card-hover text-center">
+          <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-900 mb-2">होम डिलिव्हरी</h3>
+          <p class="text-sm text-slate-600">थेट ग्राहकांच्या घरापर्यंत सुरक्षित डिलिव्हरी सेवा.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Joining Steps -->
+  <section class="py-16 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-orange-500 font-bold text-sm uppercase tracking-wider">सहभाग प्रक्रिया</span>
+      <h2 class="text-3xl md:text-4xl font-black text-blue-900 mt-1">नवे सदस्य जोडण्याचे ४ सोपे टप्पे</h2>
+      <div class="w-20 h-1 bg-orange-500 mx-auto mt-3 rounded-full"></div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow border border-slate-100 text-center relative">
+        <div class="w-10 h-10 bg-blue-900 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">१</div>
+        <h3 class="text-lg font-bold text-blue-900 mb-2">मोफत नोंदणी</h3>
+        <p class="text-sm text-slate-600">केवायसी (KYC) आणि प्राथमिक माहिती देऊन नोंदणी पूर्ण करा.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow border border-slate-100 text-center relative">
+        <div class="w-10 h-10 bg-orange-500 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">२</div>
+        <h3 class="text-lg font-bold text-blue-900 mb-2">प्रॉडक्ट निवड</h3>
+        <p class="text-sm text-slate-600">आपल्या गरजेनुसार किराणा किंवा होम केअर किट निवडा.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow border border-slate-100 text-center relative">
+        <div class="w-10 h-10 bg-blue-900 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">३</div>
+        <h3 class="text-lg font-bold text-blue-900 mb-2">नेटवर्क वाढवा</h3>
+        <p class="text-sm text-slate-600">इतर व्यापारी व ग्राहकांना तुमच्या रेफरल लिंकने जोडा.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow border border-slate-100 text-center relative">
+        <div class="w-10 h-10 bg-orange-500 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">४</div>
+        <h3 class="text-lg font-bold text-blue-900 mb-2">नियमित उत्पन्न</h3>
+        <p class="text-sm text-slate-600">दरमहा विक्री व टीम टर्नओव्हरवर थेट उत्पन्न मिळवा.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Call To Action Banner -->
+  <section class="bg-gradient-to-r from-orange-500 to-amber-500 text-white py-12 px-4 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black mb-4">आजच स्वराज्य सिस्टीम्सचे सदस्य व्हा!</h2>
+      <p class="text-lg mb-8 text-orange-100">स्वतंत्र व्यवसाय, स्वतःचे नेटवर्क आणि उज्ज्वल भविष्य!</p>
+      <a href="register.html" class="bg-blue-900 hover:bg-blue-950 text-white font-bold py-3.5 px-8 rounded-full shadow-lg transition transform hover:scale-105 inline-block">
+        नोंदणी करा आणि सुरुवात करा
+      </a>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-10 px-4 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <img src="Logo_2.jpg" alt="स्वराज्य सिस्टीम्स लोगो" class="h-10 bg-white p-1 rounded">
+          <span class="text-xl font-bold text-white">Swarajya Systems</span>
+        </div>
+        <p class="text-sm text-slate-400 max-w-md">अधिकृत नोंदणीकृत संस्था (Shop Act & Udyam). NIC Code 4711 (Retail) & NIC Code 4690 (Wholesale Trade)[cite: 4].</p>
+      </div>
+      <div class="md:text-right text-sm">
+        <p>© 2026 Swarajya Systems. सर्व अधिकार सुरक्षित.</p>
+        <p class="mt-1 text-slate-500">समृद्धीचा नवा मार्ग - महाराष्ट्र</p>
+      </div>
+    </div>
   </footer>
 
 </body>
